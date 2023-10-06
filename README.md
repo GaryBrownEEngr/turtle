@@ -1,6 +1,7 @@
 # Turtle
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/GaryBrownEEngr/turtle.svg)](https://pkg.go.dev/github.com/GaryBrownEEngr/turtle)
+[![Go CI](https://github.com/GaryBrownEEngr/turtle/actions/workflows/go.yml/badge.svg)](https://github.com/GaryBrownEEngr/turtle/actions/workflows/go.yml)
 
 ## A Turtle Graphics System for Golang
 
