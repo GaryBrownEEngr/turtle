@@ -4,8 +4,9 @@ import (
 	"image/color"
 	"math"
 	"time"
-	"worldsim/models"
-	"worldsim/turtleutil"
+
+	"github.com/GaryBrownEEngr/turtle/models"
+	"github.com/GaryBrownEEngr/turtle/turtleutil"
 )
 
 type turtle struct {

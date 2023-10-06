@@ -3,10 +3,11 @@ package main
 import (
 	"math"
 	"time"
-	"worldsim/ebitencanvas"
-	"worldsim/models"
-	"worldsim/turtle"
-	"worldsim/turtleutil"
+
+	"github.com/GaryBrownEEngr/turtle/ebitencanvas"
+	"github.com/GaryBrownEEngr/turtle/models"
+	"github.com/GaryBrownEEngr/turtle/turtle"
+	"github.com/GaryBrownEEngr/turtle/turtleutil"
 )
 
 func main() {

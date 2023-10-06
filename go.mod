@@ -1,4 +1,4 @@
-module worldsim
+module github.com/GaryBrownEEngr/turtle
 
 go 1.20
 

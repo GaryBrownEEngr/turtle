@@ -1,7 +1,7 @@
 package ebitencanvas
 
 import (
-	"worldsim/models"
+	"github.com/GaryBrownEEngr/turtle/models"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
