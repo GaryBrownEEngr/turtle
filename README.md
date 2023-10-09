@@ -112,5 +112,7 @@ type Turtle interface {
 	PenColor(c color.RGBA)
 	PenSize(size float64)
 	PaintDot(size float64)
+	Fill(c color.RGBA)
+	Circle(radius, angleAmountToDraw float64, steps int)
 }
 ```
