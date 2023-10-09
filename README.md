@@ -23,7 +23,7 @@ go run github.com/GaryBrownEEngr/turtle/examples/turtlebasic@latest
 
 ### Go Gopher
 
-Convereted from the python script seen in [this youtube video](https://www.youtube.com/watch?v=d8A1jqOGzNE).
+Converted from the python script seen in [this youtube video](https://www.youtube.com/watch?v=d8A1jqOGzNE).
 
 ```bash
 go run github.com/GaryBrownEEngr/turtle/examples/fill@latest
