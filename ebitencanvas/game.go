@@ -74,10 +74,14 @@ func bucketFill(i *image.RGBA, x, y int, c color.RGBA) {
 
 	xMin := i.Rect.Min.X
 	yMin := i.Rect.Min.Y
-	xMax := i.Rect.Max.X
-	yMax := i.Rect.Max.Y
+	xMax := i.Rect.Max.X - 1
+	yMax := i.Rect.Max.Y - 1
 
 	srcColor := i.RGBAAt(x, y)
+	if colorMatches(srcColor, c) {
+		// The selected pixes is already the correct color
+		return
+	}
 	upNextStack = append(upNextStack, upNextStruct{x: x, y: y})
 
 	for len(upNextStack) > 0 {
