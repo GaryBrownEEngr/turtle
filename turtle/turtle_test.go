@@ -5,8 +5,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/GaryBrownEEngr/turtle/fakes"
-	"github.com/GaryBrownEEngr/turtle/mocks"
+	"github.com/GaryBrownEEngr/turtle/models/fakes"
+	"github.com/GaryBrownEEngr/turtle/models/mocks"
 	"github.com/GaryBrownEEngr/turtle/turtleutil"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
