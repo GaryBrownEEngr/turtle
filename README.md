@@ -2,6 +2,8 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/GaryBrownEEngr/turtle.svg)](https://pkg.go.dev/github.com/GaryBrownEEngr/turtle)
 [![Go CI](https://github.com/GaryBrownEEngr/turtle/actions/workflows/go.yml/badge.svg)](https://github.com/GaryBrownEEngr/turtle/actions/workflows/go.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/GaryBrownEEngr/turtle)](https://goreportcard.com/report/github.com/GaryBrownEEngr/turtle)
+[![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/GaryBrownEEngr/f2db27a68e3969e4a2cc8491ab57164d/raw/GaryBrownEEngr__main.json)]
 
 ## A Turtle Graphics System for Golang
 
