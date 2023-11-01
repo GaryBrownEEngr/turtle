@@ -61,7 +61,7 @@ jobs:
             echo "Current test coverage : $totalCoverage %"
             echo "COVERAGE=$totalCoverage" >> $GITHUB_ENV
             echo $GITHUB_REF
-            echo ${{ $GITHUB_REF == 'main' }}
+            echo $GITHUB_REF == 'main'
             if (( $(echo "$totalCoverage $COVERAGE_THRESHOLD_PERCENT" | awk '{print ($1 >= $2)}') )); then
                 echo "OK"
             else
