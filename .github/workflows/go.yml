@@ -73,7 +73,7 @@ jobs:
         # https://dev.to/thejaredwilcurt/coverage-badge-with-github-actions-finally-59fa
       - if: ${{ github.ref == 'refs/heads/main' }}
         name: Create the Badge
-        uses: schneegans/dynamic-badges-action@v1.0.0
+        uses: schneegans/dynamic-badges-action@v1.7.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: f2db27a68e3969e4a2cc8491ab57164d
