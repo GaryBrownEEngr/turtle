@@ -60,8 +60,8 @@ jobs:
             totalCoverage=`go tool cover -func=coverage.out | grep total | grep -Eo '[0-9]+\.[0-9]+'`
             echo "Current test coverage : $totalCoverage %"
             echo "COVERAGE=$totalCoverage" >> $GITHUB_ENV
-            echo ${{ env.BRANCH }}
-            echo ${{ env.BRANCH == 'main' }}
+            echo ${{ GITHUB_REF }}
+            echo ${{ GITHUB_REF == 'main' }}
             if (( $(echo "$totalCoverage $COVERAGE_THRESHOLD_PERCENT" | awk '{print ($1 >= $2)}') )); then
                 echo "OK"
             else
@@ -78,7 +78,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: f2db27a68e3969e4a2cc8491ab57164d
-          filename: GaryBrownEEngr__${{ env.BRANCH }}.json
+          filename: GaryBrownEEngr__${{ GITHUB_REF }}.json
           label: Test Coverage
           message: ${{ env.COVERAGE }}
           color: green
