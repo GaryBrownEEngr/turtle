@@ -8,7 +8,7 @@ import (
 )
 
 // Draws The Go Gopher.
-// Convereted from the python script seen in this youtube video: https://www.youtube.com/watch?v=d8A1jqOGzNE
+// Converted from the python script seen in this youtube video: https://www.youtube.com/watch?v=d8A1jqOGzNE
 // Since this turtle system doesn't have poly-fill like python does, bucket fill is used instead.
 func main() {
 	params := turtle.Params{Width: 500, Height: 600, ShowFPS: true}
