@@ -5,19 +5,14 @@ import (
 	"image/color"
 
 	"github.com/GaryBrownEEngr/turtle/tools"
+	"golang.org/x/exp/constraints"
 )
 
 // Provide a pass through layer to users of this library don't have to import the tools package.
 
 // The ratio is capped between 0 and 1
-func Lerp(a, b, ratio float64) float64 {
+func Lerp[T constraints.Integer | constraints.Float](a, b T, ratio float64) T {
 	return tools.Lerp(a, b, ratio)
-}
-
-// The ratio is capped between 0 and 1
-// Currently the function floors the number instead of rounding to nearest.
-func LerpUint8(a, b uint8, ratio float64) uint8 {
-	return tools.LerpUint8(a, b, ratio)
 }
 
 // Creates a color between the given a and b. 0 means a is given, 1 means b is given, .5 is a color half way between.
