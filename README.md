@@ -81,7 +81,7 @@ import (
 )
 
 func main() {
-	params := turtle.Params{Width: 1000, Height: 1000}
+	params := turtle.Params{Width: 500, Height: 500}
 	turtle.Start(params, drawFunc)
 }
 
@@ -146,6 +146,7 @@ type Turtle interface {
 	PenDown()
 	PD() // Pen Down alias
 	On() // Pen Down alias
+	IsPenDown() bool
 	Color(c color.Color)
 	GetColor() color.Color
 	Size(size float64)
