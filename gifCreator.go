@@ -9,11 +9,14 @@ import (
 	"github.com/GaryBrownEEngr/easygif"
 )
 
+// Take an image of the turtle program window's contents and save it as a PNG.
 func TakeScreenshot(window Window, outputPNGPath string) error {
 	screenshot := window.GetCanvas().GetScreenshot()
 	return easygif.SaveImageToPNG(screenshot, outputPNGPath)
 }
 
+// Take a set of screenshots of the turtle program window's content and return a slice of images.
+// The length of the captured video will be delayBetweenScreenshots * frameCount
 func TakeScreenshotVideo(
 	window Window,
 	delayBetweenScreenshots time.Duration,
@@ -36,6 +39,9 @@ func TakeScreenshotVideo(
 }
 
 // Start this as a go routine to create a GIF of your creation.
+// This uses the nearest color in the Plan9 palette. So it is best for images with blocks of solid colors.
+// The length of the captured video will be delayBetweenScreenshots * frameCount
+// The length of the gif will be delayBetweenGifFrames * frameCount
 func CreateGif(
 	window Window,
 	delayBetweenScreenshots time.Duration,
@@ -57,6 +63,9 @@ func CreateGif(
 }
 
 // Start this as a go routine to create a GIF of your creation.
+// Dithering will be used to achieve more colors, but images artifacts are introduced. This is best for images with lots of shading.
+// The length of the captured video will be delayBetweenScreenshots * frameCount
+// The length of the gif will be delayBetweenGifFrames * frameCount
 func CreateGifDithered(
 	window Window,
 	delayBetweenScreenshots time.Duration,
