@@ -53,7 +53,7 @@ Ebitengine is the main dependency. [Check here for the system specific instructi
 go run github.com/GaryBrownEEngr/turtle/examples/fiveturtles@latest
 ```
 
-![Golang Turtle drawing with 5 individually controlled turtles](https://github.com/GaryBrownEEngr/turtle/blob/main/examples/fiveturtles/turtlebasic.png)
+![Golang Turtle drawing with 5 individually controlled turtles](https://github.com/GaryBrownEEngr/turtle/blob/main/examples/fiveturtles/turtlebasic.gif)
 
 ### Go Gopher
 
