@@ -1,3 +1,6 @@
 *.exe
 /.vscode/
+
+# WASM
 *.wasm
+wasm_exec.js
