@@ -89,3 +89,27 @@ func CreateGifDithered(
 
 	fmt.Printf("GIF: %s: Done\n", outputGifFilePath)
 }
+
+// Start this as a go routine to create a GIF of your creation.
+// The 256 most common colors will be found and used.
+// The length of the captured video will be delayBetweenScreenshots * frameCount
+// The length of the gif will be delayBetweenGifFrames * frameCount
+func CreateGifMostCommonColors(
+	window Window,
+	delayBetweenScreenshots time.Duration,
+	delayBetweenGifFrames time.Duration,
+	outputGifFilePath string,
+	frameCount int,
+) {
+	// Collect the images
+	fmt.Printf("GIF: %s: Collecting images\n", outputGifFilePath)
+	frames := TakeScreenshotVideo(window, delayBetweenScreenshots, frameCount)
+
+	fmt.Printf("GIF: %s: Processing images\n", outputGifFilePath)
+	err := easygif.MostCommonColorsGifWrite(frames, delayBetweenGifFrames, outputGifFilePath)
+	if err != nil {
+		log.Printf("Error while running easygif.EasyGifWrite(): %v\n", err)
+	}
+
+	fmt.Printf("GIF: %s: Done\n", outputGifFilePath)
+}

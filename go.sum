@@ -1,7 +1,7 @@
 github.com/BurntSushi/xgb v0.0.0-20210121224620-deaf085860bc h1:7D+Bh06CRPCJO3gr2F7h1sriovOZ8BMhca2Rg85c2nk=
 github.com/BurntSushi/xgb v0.0.0-20210121224620-deaf085860bc/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
-github.com/GaryBrownEEngr/easygif v0.0.2 h1:YNXnjhO0oX7hkzHjJkk6a1Pz9UIfVL5EY3/uDhjBuXQ=
-github.com/GaryBrownEEngr/easygif v0.0.2/go.mod h1:nrEhZ881KuIKgHjsytSitSiblTz3q7utZRJbHqWeKnE=
+github.com/GaryBrownEEngr/easygif v0.0.3 h1:/RUWw8TpT9ik8/8w2ETGko0HEx01Jxp1WeInoFoUNE8=
+github.com/GaryBrownEEngr/easygif v0.0.3/go.mod h1:nrEhZ881KuIKgHjsytSitSiblTz3q7utZRJbHqWeKnE=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
