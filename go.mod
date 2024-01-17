@@ -3,10 +3,10 @@ module github.com/GaryBrownEEngr/turtle
 go 1.21
 
 require (
-	github.com/GaryBrownEEngr/easygif v0.0.3
+	github.com/GaryBrownEEngr/easygif v0.0.4
 	github.com/hajimehoshi/ebiten/v2 v2.6.3
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
+	golang.org/x/exp v0.0.0-20240112132812-db7319d0e0e3
 )
 
 require (
