@@ -65,6 +65,10 @@ go run github.com/GaryBrownEEngr/turtle/examples/gogopher@latest
 
 ![Golang Turtle drawing the go gopher](https://github.com/GaryBrownEEngr/turtle/blob/main/examples/gogopher/GoGopher.gif)
 
+### Recursive Tree
+
+![Golang Turtle drawing a recursive tree](https://github.com/GaryBrownEEngr/turtle/blob/main/examples/fractaltree/fractaltree.gif)
+
 ## Basic Example Program
 
 ```bash
