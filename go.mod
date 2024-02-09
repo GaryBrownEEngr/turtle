@@ -4,9 +4,9 @@ go 1.21
 
 require (
 	github.com/GaryBrownEEngr/easygif v0.0.4
-	github.com/hajimehoshi/ebiten/v2 v2.6.3
+	github.com/hajimehoshi/ebiten/v2 v2.6.5
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/exp v0.0.0-20240112132812-db7319d0e0e3
+	golang.org/x/exp v0.0.0-20240205201215-2c58cdc269a3
 )
 
 require (
