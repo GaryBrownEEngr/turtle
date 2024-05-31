@@ -1,7 +1,6 @@
 package turtle
 
 import (
-	"image"
 	"image/color"
 
 	"github.com/GaryBrownEEngr/turtle/turtleutil"
@@ -21,10 +20,4 @@ func Lerp[T constraints.Integer | constraints.Float](a, b T, ratio float64) T {
 // Currently the function floors the number instead of rounding to nearest.
 func LerpColor(a, b color.RGBA, ratio float64) color.RGBA {
 	return turtleutil.LerpColor(a, b, ratio)
-}
-
-// Load an image file and covert it to an image.Image.
-// For decode to work on file type, it must be registered by including the codec specific package.
-func LoadSpriteFile(path string) (image.Image, error) {
-	return turtleutil.LoadSpriteFile(path)
 }
